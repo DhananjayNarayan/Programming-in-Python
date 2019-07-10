@@ -28,7 +28,5 @@ while True:
         smallest=n
         
        
-   
-
 print("Maximum is", largest)
 print("Minimum is", smallest)
