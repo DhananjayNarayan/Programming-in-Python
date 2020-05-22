@@ -1,5 +1,5 @@
 """
-Python Gradebook
+Python Gradebook Project to test concepts of Lists.
 You are a student and you are trying to organize your subjects and grades using Python. 
 Explore what we’ve learned about lists to organize your subjects and scores.
 """
