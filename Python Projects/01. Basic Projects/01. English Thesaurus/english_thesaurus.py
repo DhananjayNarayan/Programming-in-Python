@@ -8,6 +8,11 @@ def fetch(word):
     word = word.lower()
     if word in data:
         return data[word]
+    # if user entered "texas" this will check for "Texas" as well.
+    elif word.title() in data:
+        return data[word.title()]
+    elif word.upper() in data:  # in case user enters acronym words like USA
+        return data[word.upper()]
     elif len(get_close_matches(word, data.keys())) > 0:
         yn = input("Incorrect Word. Do you mean %s instead? Enter 'Y' for Yes, 'N' for No : " %
                    get_close_matches(word, data.keys())[0])
