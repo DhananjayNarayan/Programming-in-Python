@@ -23,4 +23,10 @@ def fetch(word):
 
 word = input("Enter a Word: ")
 
-print(fetch(word))
+output = (fetch(word))
+
+if type(output) == list:
+    for item in output:
+        print(item)
+else:
+    print(output)
